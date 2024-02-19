@@ -238,7 +238,7 @@ export const load = async (
         return reject(e);
       }
     } catch (e) {
-      return reject("Não foi póssivel continuar a clonagem: Não foi encontrado o json\nVocê pode fazer uma nova tentativa ou reportar o erro ");
+      return reject("It was not possible to continue cloning: The json was not found\nYou can make a new attempt or report the error");
     }
   });
 };
