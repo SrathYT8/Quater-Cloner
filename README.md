@@ -16,22 +16,22 @@ $ yarn add
 ```
 **Examples with tsx**
 ```typescript
-$ pnpm i -g tsx
+$ pnpm i -g qtr
 # or
-$ npm i -g tsx
+$ npm i -g qtr
 ```
 
 ```typescript
-$ tsx .
+$ qtr .
 ```
 **You can also use [codesandbox](https://codesandbox.io/dashboard/recent) to start the cloner**
 ## Termux/Mobile
 ```Termux/moblie
 $ git clone https://github.com/devrock07/rock-cloner.git
-$ cd rock-cloner
+$ cd quater-cloner
 $ npm i
-$ npm i -g tsx
-$ tsx .
+$ npm i -g qtr
+$ qtr .
 ```
 ----
 
