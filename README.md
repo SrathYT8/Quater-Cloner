@@ -27,7 +27,7 @@ $ qtr .
 **You can also use [codesandbox](https://codesandbox.io/dashboard/recent) to start the cloner**
 ## Termux/Mobile
 ```Termux/moblie
-$ git clone https://github.com/devrock07/rock-cloner.git
+$ git clone https://github.com/SrathYT8/Quater-Cloner.git
 $ cd quater-cloner
 $ npm i
 $ npm i -g qtr
