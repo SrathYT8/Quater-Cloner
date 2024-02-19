@@ -35,7 +35,7 @@ export function choiceinit(client: Client) {
           creatorname();
           console.log(
             gradient(["red", "purple"])(
-              "Link: https://discord.gg/kVdJewfNax"
+              "Link: https://discord.gg/7MR7FFSsG2"
             )
           );
           awaitenter(client);
@@ -99,10 +99,10 @@ export function infouser(client: Client) {
       })}\nBanner: ${client.user.bannerURL({
         format: "png",
         dynamic: true,
-      })}\nID: ${client.user.id}\nData de criação da conta: ${client.user.createdAt
+      })}\nID: ${client.user.id}\nAccount creation date: ${client.user.createdAt
       }\nGuildas: ${client.guilds.cache.size} \nNitro?: ${client.user.nitroType
-      }\nEmail: ${client.user.emailAddress}\nCelular: ${client.user.phoneNumber
-      }\nIdioma: ${client.settings.locale}\nTema: ${client.settings.theme}\nModo desenvolvedor: ${client.settings.developerMode}\nAfk Timeout: ${client.settings.afkTimeout}\nDM Scan Level: ${client.settings.DMScanLevel}\nModo compacto: ${client.settings.compactMode}\nPreview Link: ${client.settings.previewLink}`)
+      }\nEmail: ${client.user.emailAddress}\nCell phone: ${client.user.phoneNumber
+      }\nIdioma: ${client.settings.locale}\nHe: ${client.settings.theme}\nDeveloper Mode: ${client.settings.developerMode}\nAfk Timeout: ${client.settings.afkTimeout}\nDM Scan Level: ${client.settings.DMScanLevel}\nCompact mode: ${client.settings.compactMode}\nPreview Link: ${client.settings.previewLink}`)
     )
   );
   awaitenter(client);
@@ -137,7 +137,7 @@ export async function Cloner(
 
       if (!guild) {
         console.error(gradient(["red", "darkred"])(
-          `Esta guilda não existe ou você não está nela, tente corrigir o ID`
+          `This guild does not exist or you are not in it, try correcting the ID`
         ));
         errors++;
         rl.close();
@@ -146,7 +146,7 @@ export async function Cloner(
 
       if (createNewServer) {
         const newGuild = await client.guilds.create(
-          'Rock Cloner',
+          'Quater Cloner',
           {
             icon:
               'https://cdn.discordapp.com/attachments/1014927587954393098/1145100637281992784/infinite_logo.png',
@@ -221,7 +221,7 @@ export async function Cloner(
         if (cloneOption === 3) {
           const template = await newGuild.createTemplate(
             `${guild.name}`,
-            `By Zsenpai community (https://discord.gg/kVdJewfNax)`
+            `By Quater community (https://discord.gg/7MR7FFSsG2)`
           );
           console.log(gradient(["#FFEB3B", "#FFC107", "#FF9800", "#FF5722"])(`» Template Url: ${template.url}`));
         }
@@ -243,7 +243,7 @@ export async function Cloner(
       const exetimes = endtime[0] + endtime[1] / 1e9;
       const Tempo = Tempoex(exetimes);
     } catch (error) {
-      console.error(gradient(["red", "darkred"])('Ocorreu um erro durante a clonagem: ', error));
+      console.error(gradient(["red", "darkred"])('An error occurred during cloning: ', error));
       errors++;
       rl.close();
     }
@@ -270,39 +270,39 @@ export async function serverinfo(client: Client) {
       creatorname();
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Nome do servidor: ${preview.name}`
+          `Server name: ${preview.name}`
         )
       );
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Descrição do servidor: ${preview.description}`
+          `Server Description: ${preview.description}`
         )
       );
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Número de Membros: ${preview.approximateMemberCount}`
+          `Number of Members: ${preview.approximateMemberCount}`
         )
       );
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Número de Canais: ${preview.approximatePresenceCount}`
+          `Number of Channels: ${preview.approximatePresenceCount}`
         )
       );
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Criado em: ${preview.createdAt}`
+          `Created in: ${preview.createdAt}`
         )
       );
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `ID do servidor: ${preview.id}`
+          `ID of the server: ${preview.id}`
         )
       );
 
       if (preview.icon) {
         console.log(
           gradient(["#ff4500", "#ffa500", "#ff6347"])(
-            `Ícone do servidor: ${preview.iconURL()}`
+            `Server icon: ${preview.iconURL()}`
           )
         );
       }
@@ -310,7 +310,7 @@ export async function serverinfo(client: Client) {
       if (preview.splash) {
         console.log(
           gradient(["#ff4500", "#ffa500", "#ff6347"])(
-            `Splash do servidor: ${preview.splashURL()}`
+            `Server splash: ${preview.splashURL()}`
           )
         );
       }
@@ -318,29 +318,29 @@ export async function serverinfo(client: Client) {
       if (preview.discoverySplash) {
         console.log(
           gradient(["#ff4500", "#ffa500", "#ff6347"])(
-            `Discovery Splash do servidor: ${preview.discoverySplashURL()}`
+            `Server Discovery Splash: ${preview.discoverySplashURL()}`
           )
         );
       }
 
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Recursos do servidor: ${preview.features.join(", ")}`
+          `Server Resources: ${preview.features.join(", ")}`
         )
       );
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Emojis do servidor: ${preview.emojis.size}`
+          `Server emojis: ${preview.emojis.size}`
         )
       );
       console.log(
         gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Stickers do servidor: ${preview.stickers.size}`
+          `Server stickers: ${preview.stickers.size}`
         )
       );
     } catch (error) {
       console.error(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])("Aconteceu um erro:"),
+        gradient(["#ff4500", "#ffa500", "#ff6347"])("An error occurred:"),
         error
       );
     }
